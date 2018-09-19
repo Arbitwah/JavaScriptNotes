@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>    
+    <script>
+    var animal = "horse";
+
+    function number1(){
+         var animal = "Dog";
+         document.write(animal
+         + "<br/>")
+
+         for(let i = 0; i < 3; i++){
+             document.write(i+ "<br/>");
+         }
+    //     document.write(i); creates an error because i is out of scope 
+    // var is function level
+    // let is block level
+    // if you don't use let or var the variable is already made global
+       
+    }
+
+    function number2(){
+        document.write(animal);
+    }
+    </script>
+</head>
+<body>
+<h1>Scope of Variables</h1>
+<script>
+number1();
+document.write("<br/>");
+number2();
+</script>
+</body>
+</html>
